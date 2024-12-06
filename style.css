@@ -1,0 +1,109 @@
+body {
+  text-align: center;
+  background-color: rgb(163, 162, 162);
+  color: white;
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+section {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: rgba(126, 17, 70, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.questions {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.facts li {
+  text-align: left;
+  margin: 10px;
+  padding: 5px 10px;
+  list-style: disc;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.facts li:hover,
+.questions:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  margin-right: 30px;
+  padding: 0;
+}
+
+ul li,
+ol li {
+  margin-bottom: 5px;
+}
+
+img {
+  max-height: 250px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+  scale: 1.5;
+}
+
+header {
+  padding: 20px;
+  background-color: rgba(126, 17, 70, 0.8);
+  color: white;
+  text-align: center;
+  border-bottom: 5px solid white;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .facts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+  }
+}
